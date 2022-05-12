@@ -1,0 +1,17 @@
+<div style="width: 100vw; display: flex; justify-content: center; height: 100vh; align-items: center; flex-direction: column;">
+  <div style="width: 80%; display: flex; justify-content: space-between;">
+    <input [(ngModel)]="esquerdaCima" (keyup)="mudarBorda(1)">
+    <input [(ngModel)]="direitaCima" (keyup)="mudarBorda(2)">
+  </div>
+  <div id="quadrado">
+    <div>
+      <div>#quadrado {{ '{' }}</div>
+      <div style="margin-left: 20px; margin-top: 4px; margin-bottom: 4px;">border-radius: {{bordaTotal}}</div>
+      <div>{{ '}' }}</div>
+    </div>
+  </div>
+  <div style="width: 80%; display: flex; justify-content: space-between;">
+    <input [(ngModel)]="esquerdaBaixo" (keyup)="mudarBorda(3)">
+    <input [(ngModel)]="direitaBaixo" (keyup)="mudarBorda(4)">
+  </div>
+</div>
